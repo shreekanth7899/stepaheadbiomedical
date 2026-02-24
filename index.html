@@ -23,18 +23,17 @@
       </a>
     </div>
 
-    <!-- Right side (Social on top, Menu below) -->
-    <div class="right-header">
+    <!-- Mobile Menu Icon -->
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
 
-
-      <!-- Menu Links -->
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#programs">Programs</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-      </ul>
-
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
     </div>
 
   </div>
@@ -235,6 +234,14 @@
 </footer>
 
 <button id="topBtn">↑</button>
+<script>
+  const toggleBtn = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
+
+  toggleBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
 
 </body>
 
